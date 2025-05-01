@@ -55,6 +55,10 @@
 	}
 }
 
+body {
+	@apply bg-zinc-950;
+}
+
 button {
 	@apply text-white cursor-pointer;
 }

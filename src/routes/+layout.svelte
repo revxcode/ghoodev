@@ -1,9 +1,9 @@
 <script>
-	import '../app.css';
+	import '@/app.css';
 	import { beforeNavigate, afterNavigate } from '$app/navigation';
 	import { onDestroy } from 'svelte';
 	import { writable } from 'svelte/store';
-	import LoadingSpinner from '$lib/LoadingSpinner.svelte';
+	import LoadingSpinner from '$lib/components/Loading/LoadingSpinner.svelte';
 
 	let loading = writable(false);
 
