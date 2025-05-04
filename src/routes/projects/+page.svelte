@@ -1,4 +1,6 @@
 <script lang="js">
+	// @ts-nocheck
+
 	import { onMount } from 'svelte';
 	import { getGithubRepos } from '@/lib/services/github_repos';
 	import MainLayout from '@/layouts/main-layout.svelte';
@@ -104,7 +106,7 @@
 						id="sortBy"
 						class="rounded-lg bg-transparent p-2 text-white outline-none"
 						value="sortBy"
-						on:change={(e) => {
+						onchange={(e) => {
 							const sortBy = e.target.value;
 							repos = sortRepos(repos, sortBy);
 						}}
@@ -125,7 +127,7 @@
 						<div class="absolute z-0 h-full w-full scale-125 opacity-20 blur-sm">
 							<img
 								src="https://www.bimadev.xyz/_next/image?url=%2Fimages%2Fprojects%2Fproject-01%2F3d-builder.png&w=1200&q=75"
-								alt="example-bg-image"
+								alt="Example Background"
 							/>
 						</div>
 						<div class="flex h-full w-full flex-col p-2">
@@ -133,7 +135,7 @@
 								<div class="flex h-full w-full flex-col">
 									<img
 										src="https://www.bimadev.xyz/_next/image?url=%2Fimages%2Fprojects%2Fproject-01%2F3d-builder.png&w=1200&q=75"
-										alt="example-bg-image"
+										alt="Example Thumbnail"
 										class={'aspect-video rounded-lg object-cover object-center '}
 									/>
 									<div class="space-y-2 p-2 text-start text-white">
@@ -173,14 +175,14 @@
 							class={'relative flex min-h-52 flex-col items-center justify-center overflow-hidden rounded-lg border border-zinc-800 bg-zinc-950 shadow-lg transition-shadow duration-300 ease-in-out hover:shadow-xl md:aspect-video '}
 						>
 							<div class="absolute z-0 h-full w-full scale-125 opacity-20 blur-sm">
-								<img src={repo.thumbnail} alt="bg-blur-image" />
+								<img src={repo.thumbnail} alt="Blured Background" />
 							</div>
 							<div class="flex h-full w-full flex-col p-2">
 								<div class="z-10 flex h-full w-full text-center text-white">
 									<div class="flex h-full w-full flex-col">
 										<img
 											src={repo.thumbnail}
-											alt="thumbnail-image"
+											alt="Thumbnail"
 											class="aspect-video rounded-lg object-cover object-center"
 										/>
 										<div class="space-y-2 p-2 text-start text-white">
@@ -237,7 +239,7 @@
 										</div>
 										<button
 											class="group flex rounded-full border border-zinc-600 bg-zinc-900/30 px-4 py-0.5 duration-100 hover:pr-8"
-											on:click={() => {
+											onclick={() => {
 												window.open(repo.homepage ? repo.homepage : repo.html_url, '_blank');
 											}}
 										>
