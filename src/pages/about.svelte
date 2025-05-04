@@ -50,7 +50,7 @@
 				></div>
 				<div class="absolute z-10 h-40 w-40 rounded-full bg-zinc-950 md:h-56 md:w-56"></div>
 				<img
-					src="src/assets/formal.png"
+					src="/formal.png"
 					alt="Avatar"
 					class="pointer-events-none z-20 h-52 w-52 object-cover md:h-64 md:w-64"
 				/>
