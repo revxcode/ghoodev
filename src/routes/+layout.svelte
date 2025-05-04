@@ -24,7 +24,7 @@
 	<title>Portfolio | GhooDev</title>
 	<meta
 		name="description"
-		content="Portfolio of GhooDev, a Web Developer specializing in SvelteKit and TailwindCSS."
+		content="Portfolio of GhooDev, a Web Developer specializing in Javascript and TailwindCSS."
 	/>
 	<meta property="og:title" content="GhooDev Portfolio" />
 	<meta property="og:description" content="Showcasing my best web development projects." />

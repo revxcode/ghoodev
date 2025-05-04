@@ -1,5 +1,5 @@
 <script>
-	import { swapAnimations } from '@/lib/animations';
+	import { swapAnimations } from '@/lib/animations/animation';
 	import { onMount } from 'svelte';
 
 	onMount(() => {
@@ -9,7 +9,18 @@
 	});
 </script>
 
-<section class="mx-auto max-w-4xl">
+<svelte:head>
+	<title>Portfolio | GhooDev</title>
+	<meta
+		name="description"
+		content="Portfolio of GhooDev, a Web Developer specializing in Javascript and TailwindCSS."
+	/>
+	<meta property="og:title" content="GhooDev Portfolio" />
+	<meta property="og:description" content="Showcasing my best web development projects." />
+	<meta property="og:type" content="website" />
+</svelte:head>
+
+<section class="mx-auto max-w-4xl px-4">
 	<h1 class="swap-bottom mt-8 mb-4 py-4 text-5xl font-semibold text-white">
 		Hello, I'm
 		<span class="bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent"
@@ -100,4 +111,5 @@
 			<span class="text-center text-sm text-zinc-400">Digital Certificate</span>
 		</div>
 	</div>
+	<div class="flex">showcasing project</div>
 </section>

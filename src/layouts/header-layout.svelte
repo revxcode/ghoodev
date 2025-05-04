@@ -1,8 +1,8 @@
 <script>
 	import { onMount } from 'svelte';
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 
-	$: currentPath = $page.url.pathname;
+	$: currentPath = page.url.pathname;
 
 	let isMobileMenuOpen = false;
 
@@ -24,24 +24,24 @@
 	}
 </script>
 
-<header class="flex items-center justify-between p-4 bg-transparent text-white">
-	<div class="flex items-center justify-between md:justify-around w-full z-50">
+<header class="flex items-center justify-between bg-transparent p-4 text-white">
+	<div class="z-50 flex w-full items-center justify-between md:justify-around">
 		<div class="flex flex-col items-end">
 			<a href="/" class="text-2xl font-bold">GhooDev</a>
 			<div class="flex gap-1">
-				<div class="w-2 h-2 bg-cyan-500"></div>
-				<div class="w-2 h-2 bg-cyan-500"></div>
-				<div class="w-2 h-2 bg-cyan-500"></div>
-				<div class="w-2 h-2 bg-cyan-500"></div>
-				<div class="w-2 h-2 bg-cyan-500"></div>
-				<div class="w-12 h-2 bg-gradient-to-r from-cyan-500 to-indigo-500"></div>
+				<div class="h-2 w-2 bg-cyan-500"></div>
+				<div class="h-2 w-2 bg-cyan-500"></div>
+				<div class="h-2 w-2 bg-cyan-500"></div>
+				<div class="h-2 w-2 bg-cyan-500"></div>
+				<div class="h-2 w-2 bg-cyan-500"></div>
+				<div class="h-2 w-12 bg-gradient-to-r from-cyan-500 to-indigo-500"></div>
 			</div>
 		</div>
-		<nav class="relative ml-6 z-20">
+		<nav class="relative z-20 ml-6">
 			<button
 				type="button"
 				on:click={toggleMobileMenu}
-				class="md:hidden p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700"
+				class="rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white md:hidden"
 			>
 				<span class="sr-only">Toggle navigation</span>
 				{#if !isMobileMenuOpen}
@@ -77,7 +77,7 @@
 				{/if}
 			</button>
 			<ul
-				class={'min-w-20 flex-col absolute right-0 top-12 py-8 px-4 space-y-8 rounded-md bg-zinc-900 md:flex-row md:bg-transparent md:static md:space-y-0 md:space-x-6 md:p-0 md:rounded-none transition-all duration-300 ease-in-out origin-top-right shadow-md ' +
+				class={'absolute top-12 right-0 min-w-20 origin-top-right flex-col space-y-8 rounded-md bg-zinc-900 px-4 py-8 shadow-md transition-all duration-300 ease-in-out md:static md:flex-row md:space-y-0 md:space-x-6 md:rounded-none md:bg-transparent md:p-0 ' +
 					(isMobileMenuOpen
 						? 'scale-100 opacity-100'
 						: 'scale-0 opacity-0 md:flex md:scale-100 md:opacity-100')}
@@ -86,7 +86,7 @@
 					class={'relative ' +
 						(currentPath === '/' ? 'text-cyan-500' : 'text-gray-200 hover:text-gray-400')}
 				>
-					<a href="/" class="flex flex-col items-center text-sm gap-2">
+					<a href="/" class="flex flex-col items-center gap-2 text-sm">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 							><path
 								fill="none"
@@ -103,7 +103,7 @@
 					class={'relative ' +
 						(currentPath === '/about' ? 'text-cyan-500' : 'text-gray-200 hover:text-gray-400')}
 				>
-					<a href="/about" class="flex flex-col items-center text-sm gap-2">
+					<a href="/about" class="flex flex-col items-center gap-2 text-sm">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 							><g fill="none" stroke="currentColor" stroke-width="1.5"
 								><circle cx="12" cy="9" r="3" /><path
@@ -122,7 +122,7 @@
 					class={'relative ' +
 						(currentPath === '/projects' ? 'text-cyan-500' : 'text-gray-200 hover:text-gray-400')}
 				>
-					<a href="/projects" class="flex flex-col items-center text-sm gap-2">
+					<a href="/projects" class="flex flex-col items-center gap-2 text-sm">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 							><g fill="none" stroke="currentColor" stroke-width="1.5"
 								><path
@@ -143,7 +143,7 @@
 					class={'relative ' +
 						(currentPath === '/contact' ? 'text-cyan-500' : 'text-gray-100 hover:text-gray-400')}
 				>
-					<a href="/contact" class="flex flex-col items-center text-sm gap-2">
+					<a href="/contact" class="flex flex-col items-center gap-2 text-sm">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 							><g fill="none" stroke="currentColor" stroke-width="1.5"
 								><path
@@ -162,6 +162,6 @@
 	</div>
 </header>
 <div
-	class={'absolute top-0 w-full min-h-screen z-40 bg-black transition-opacity duration-300 ease-in-out ' +
-		(isMobileMenuOpen ? 'opacity-80' : 'opacity-0 hidden')}
+	class={'absolute top-0 z-40 min-h-screen w-full bg-black transition-opacity duration-300 ease-in-out ' +
+		(isMobileMenuOpen ? 'opacity-80' : 'hidden opacity-0')}
 ></div>
