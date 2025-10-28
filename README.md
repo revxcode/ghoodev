@@ -1,8 +1,6 @@
-# ghoodev
+# Simple Svelte + Vite starter for ghoodev projects — a small personal/site boilerplate with components, hooks and services.
 
 ![Hero](image.webp)
-
-Simple Svelte + Vite starter for ghoodev projects — a small personal/site boilerplate with components, hooks and services.
 
 <!-- Badges -->
 [![Svelte](https://img.shields.io/badge/Svelte-FF3E00?style=flat&logo=svelte&logoColor=white)](https://svelte.dev) [![Vite](https://img.shields.io/badge/Vite-646cff?style=flat&logo=vite&logoColor=white)](https://vitejs.dev) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
