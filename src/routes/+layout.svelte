@@ -27,6 +27,14 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Teguh Ersyarudin | Personal Portfolio</title>
+	<meta
+		name="description"
+		content="Personal portfolio of Teguh Ersyarudin — frontend developer specializing in Svelte, UI/UX, and responsive web apps. Explore projects, skills, and contact details."
+	/>
+</svelte:head>
+
 <header
 	class={cn(
 		'fixed z-20 flex w-full items-center justify-between px-6 py-4 transition-all',

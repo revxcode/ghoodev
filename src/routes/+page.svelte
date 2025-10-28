@@ -67,11 +67,7 @@
 </section>
 
 <!-- About Section  -->
-<section
-	id="about"
-	bind:this={aboutSection}
-	class="bg-gradient-to-b from-white to-neutral-100 py-24"
->
+<section id="about" bind:this={aboutSection} class="bg-white py-24">
 	<div class="container mx-auto px-6">
 		<div class="mx-auto max-w-3xl">
 			<h2 class="mb-8 text-center text-4xl font-bold text-black md:text-5xl">About Me</h2>
@@ -96,11 +92,7 @@
 </section>
 
 <!-- Skills Section  -->
-<section
-	id="skills"
-	bind:this={skillsSection}
-	class="bg-gradient-to-b from-neutral-100 to-white py-24"
->
+<section id="skills" bind:this={skillsSection} class="bg-white py-24">
 	<div class="container mx-auto px-6">
 		<h2 class="mb-16 text-center text-4xl font-bold text-black md:text-5xl">Skills & Expertise</h2>
 		<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
