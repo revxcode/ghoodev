@@ -1,73 +1,31 @@
 ![Portfolio banner](/image.webp)
 
-# A personal portfolio built with Svelte.
+# Portfolio 🎨
 
-## Features
-- Responsive, accessible layout
-- Project gallery with links and descriptions
-- About, Skills, and Contact sections
-- Easy to customize and extend
+Singkat & sederhana: portofolio pribadi dibuat dengan Svelte untuk menampilkan proyek, skill, dan cara menghubungi.
 
-## Tech stack
-- Svelte
-- Vite (or SvelteKit if used)
-- HTML, CSS (Tailwind/PostCSS optional)
-- Node.js (for dev/build)
+## ⚙️ Tech
+- Svelte + Vite
+- HTML, CSS (Tailwind opsional)
+- Node.js
 
-## Prerequisites
-- Node.js >= 16
-- npm or yarn
+## 🚀 Quick start
+1. git clone <repo-url>
+2. npm install
+3. npm run dev
+   - Buka http://localhost:5173
 
-## Setup
-1. Clone the repo:
-   git clone <repo-url>
-2. Install dependencies:
-   npm install
-   # or
-   yarn
+## 📦 Build
+- npm run build
+- npm run preview
 
-## Development
-Start the dev server:
-npm run dev
-# or
-yarn dev
+## 🛠️ Struktur (singkat)
+- src/ — kode sumber
+- static/ — aset statis
+- package.json, vite.config.js
 
-Open http://localhost:5173 (Vite default) or the port shown in the terminal.
+## 🤝 Kontribusi
+Fork → branch → PR. Jaga commit singkat.
 
-## Build
-Create a production build:
-npm run build
-# or
-yarn build
-
-Serve the build locally for testing:
-npm run preview
-# or
-yarn preview
-
-## Deployment
-- Deploy the generated build folder to static hosts like Netlify, Vercel, GitHub Pages, or any static file server.
-- If using SvelteKit, follow the adapter-specific deployment steps.
-
-## Project structure (example)
-- src/
-  - routes/ or pages/ — page components
-  - lib/ — reusable components
-  - assets/ — images, icons
-  - styles/ — global CSS or Tailwind config
-- static/ — static files
-- package.json
-- vite.config.js or svelte.config.js
-
-## Customization
-- Update site metadata (title, description) in src or app root.
-- Replace placeholder content and images in src/assets.
-- Add projects to the projects data file or component.
-
-## Contributing
-- Fork, create a branch, make changes, open a PR.
-- Keep commits small and focused.
-- Run lint/tests (if any) before submitting.
-
-## License
-Specify a license in LICENSE file (e.g., MIT).
+## 📬 Contact
+Tambah email / LinkedIn / GitHub di sini.
