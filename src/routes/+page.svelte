@@ -77,7 +77,7 @@
 			<h2 class="mb-8 text-center text-4xl font-bold text-black md:text-5xl">About Me</h2>
 			<div class="space-y-6 text-lg text-neutral-600">
 				<p>
-					I'm a passionate full-stack developer with over 5 years of experience building modern web
+					I'm a passionate full-stack developer with over 3 years of experience building modern web
 					applications. I specialize in creating intuitive user interfaces and scalable backend
 					systems.
 				</p>
@@ -87,8 +87,8 @@
 					clean, maintainable code and staying up-to-date with the latest technologies.
 				</p>
 				<p>
-					When I'm not coding, you'll find me exploring new design trends, contributing to
-					open-source projects, or enjoying a good cup of coffee while sketching new ideas.
+					When I'm not coding, I focus on new expertise—like IoT and electronics—contributing to
+					open-source, and sketching ideas over coffee.
 				</p>
 			</div>
 		</div>
