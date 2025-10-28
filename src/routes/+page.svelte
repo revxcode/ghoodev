@@ -37,16 +37,19 @@
 	bind:this={heroSection}
 	class="relative flex min-h-screen items-center justify-center overflow-hidden"
 >
-	<div class="animate-fade-in relative z-10 container mx-auto px-6">
-		<div class="mx-auto max-w-4xl text-center">
-			<h1 class="mb-6 text-6xl font-bold text-black md:text-7xl lg:text-8xl">
+	<div class="animate-fade-in relative z-10 container mx-auto">
+		<div class="container mx-auto max-w-4xl text-center">
+			<!-- SEO -->
+			<h1 class="sr-only">Fullstack Developer, Creative Developer, & IoT Enthusiast</h1>
+
+			<h2 class="mb-6 text-6xl font-bold text-black md:text-7xl lg:text-8xl">
 				Hi, I'm Teguh Ersyarudin
-			</h1>
+			</h2>
 			<p class="mx-auto mb-8 max-w-2xl text-xl text-neutral-600 md:text-2xl">
 				Creative developer crafting beautiful digital experiences with modern technologies
 			</p>
 
-			<div class="flex flex-col justify-center gap-4 sm:flex-row">
+			<div class="flex flex-col justify-center gap-4 px-6 sm:flex-row">
 				<button
 					class="group focus-visible:ring-ring inline-flex h-11 items-center justify-center gap-2 rounded-md px-8 text-sm font-medium focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50"
 					onclick={() => scrollToSection('projectsSection')}
@@ -56,7 +59,7 @@
 				</button>
 
 				<button
-					class="focus-visible:ring-ring inline-flex h-11 items-center justify-center gap-2 rounded-md border bg-white px-8 text-sm font-medium text-black transition-colors hover:bg-black hover:text-white focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50"
+					class="focus-visible:ring-ring inline-flex h-11 items-center justify-center gap-2 rounded-md border bg-black px-8 text-sm font-medium text-white transition-colors hover:bg-black hover:text-white focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 md:bg-white md:text-black"
 					onclick={() => scrollToSection('contactSection')}
 				>
 					Get In Touch
@@ -202,7 +205,7 @@
 				<div class="relative aspect-square overflow-hidden">
 					<img
 						src="electro-tools.webp"
-						alt="Mobile Experience"
+						alt="Mobile Experience Design electrotools.vercel.app"
 						class="absolute z-10 h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
 					/>
 					<div
@@ -249,7 +252,7 @@
 				<div class="relative aspect-square overflow-hidden">
 					<img
 						src="simply-ai.webp"
-						alt="E-Commerce Platform"
+						alt="AI Integration"
 						class="absolute z-10 h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
 					/>
 					<div
@@ -281,8 +284,8 @@
 						<span class="rounded-full bg-gray-200 px-3 py-1 text-sm text-gray-800">React</span>
 						<span class="rounded-full bg-gray-200 px-3 py-1 text-sm text-gray-800">Markdown</span>
 						<span class="rounded-full bg-gray-200 px-3 py-1 text-sm text-gray-800"
-							>Tailwind CSS</span
-						>
+							>Tailwind CSS
+						</span>
 					</div>
 				</div>
 			</div>
@@ -291,7 +294,7 @@
 </section>
 
 <!-- Contact Section  -->
-<section id="contact" bind:this={contactSection} class="bg-white py-24">
+<section id="contact" bind:this={contactSection} class="bg-white py-24 pb-12">
 	<div class="container mx-auto px-6">
 		<div class="mx-auto max-w-3xl text-center">
 			<h2 class="mb-8 text-4xl font-bold text-black md:text-5xl">Let's Work Together</h2>
@@ -339,7 +342,7 @@
 		</div>
 	</div>
 
-	<div class="mt-24 text-center text-gray-500">
+	<div class="mt-24 text-center text-xs text-gray-500 md:text-base">
 		<p>© 2025 Teguh Ersyarudin. All rights reserved.</p>
 	</div>
 </section>

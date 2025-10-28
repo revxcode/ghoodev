@@ -11,7 +11,8 @@
 	let onScroll: boolean = $state(false);
 	let isOpen: boolean = $state(false);
 
-	const scrollToSection = (name: string) => {
+	const scrollToSection = (name: string, event: Event) => {
+		event.preventDefault();
 		const currentSections = get(sections);
 		currentSections[name]?.scrollIntoView({ behavior: 'smooth' });
 		isOpen = false;
@@ -28,7 +29,7 @@
 </script>
 
 <svelte:head>
-	<title>Teguh Ersyarudin | Personal Portfolio</title>
+	<title>Personal Portfolio</title>
 	<meta
 		name="description"
 		content="Personal portfolio of Teguh Ersyarudin — frontend developer specializing in Svelte, UI/UX, and responsive web apps. Explore projects, skills, and contact details."
@@ -37,18 +38,18 @@
 
 <header
 	class={cn(
-		'fixed z-20 flex w-full items-center justify-between px-6 py-4 transition-all',
-		onScroll && 'bg-white/60 shadow-sm backdrop-blur-sm'
+		'fixed z-20 flex w-full items-center justify-between bg-white px-6 py-4 transition-all',
+		onScroll && 'md:bg-white/60 md:shadow-sm md:backdrop-blur-sm'
 	)}
 >
 	<!-- Logo -->
-	<button
-		type="button"
-		onclick={() => scrollToSection('heroSection')}
+	<a
+		href="#heroSection"
+		onclick={(e) => scrollToSection('heroSection', e)}
 		class="font-poppins text-2xl uppercase"
 	>
 		TE
-	</button>
+	</a>
 
 	<!-- Tombol Burger (Mobile) -->
 	<button class="block md:hidden" onclick={() => (isOpen = !isOpen)}>
@@ -62,13 +63,13 @@
 	<!-- Navigation (Desktop) -->
 	<nav class="hidden gap-12 text-sm md:flex">
 		{#each [['aboutSection', 'About'], ['skillsSection', 'Skills'], ['projectsSection', 'Projects'], ['contactSection', 'Contact']] as [key, label]}
-			<button
-				type="button"
-				onclick={() => scrollToSection(key)}
+			<a
+				href={'#' + key}
+				onclick={(e) => scrollToSection(key, e)}
 				class="text-neutral-600 transition-colors hover:text-neutral-800"
 			>
 				{label}
-			</button>
+			</a>
 		{/each}
 	</nav>
 
@@ -80,7 +81,7 @@
 			{#each [['aboutSection', 'About'], ['skillsSection', 'Skills'], ['projectsSection', 'Projects'], ['contactSection', 'Contact']] as [key, label]}
 				<button
 					type="button"
-					onclick={() => scrollToSection(key)}
+					onclick={(e) => scrollToSection(key, e)}
 					class="text-lg font-medium text-neutral-700 transition-colors hover:text-black"
 				>
 					{label}
@@ -93,19 +94,3 @@
 <main class="min-h-screen w-full">
 	{@render children()}
 </main>
-
-<style>
-	@keyframes fade-in {
-		from {
-			opacity: 0;
-			transform: translateY(-10px);
-		}
-		to {
-			opacity: 1;
-			transform: translateY(0);
-		}
-	}
-	.animate-fade-in {
-		animation: fade-in 0.25s ease-out;
-	}
-</style>
