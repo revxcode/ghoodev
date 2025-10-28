@@ -1,37 +1,75 @@
-# Simple Svelte + Vite starter for ghoodev projects — a small personal/site boilerplate with components, hooks and services.
+# Portfolio
 
-![Hero](image.webp)
+![Portfolio banner](/image.webp)
 
-<!-- Badges -->
-[![Svelte](https://img.shields.io/badge/Svelte-FF3E00?style=flat&logo=svelte&logoColor=white)](https://svelte.dev) [![Vite](https://img.shields.io/badge/Vite-646cff?style=flat&logo=vite&logoColor=white)](https://vitejs.dev) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
-
-## Quick demo
-
-The image above is the hero/header used in the project. Place your hero file at `image.webp` (or update the path in the layout) and GitHub will render it in this README.
+A personal portfolio built with Svelte to showcase projects, skills, and contact information.
 
 ## Features
+- Responsive, accessible layout
+- Project gallery with links and descriptions
+- About, Skills, and Contact sections
+- Easy to customize and extend
 
-- ⚡ Svelte + Vite starter
-- 🧩 Small component set (Loading spinner)
-- 🔌 Simple hooks and service layer (see `src/lib/hooks` and `src/lib/services`)
-- 🧭 Layouts under `src/layouts` and routes in `src/routes`
+## Tech stack
+- Svelte
+- Vite (or SvelteKit if used)
+- HTML, CSS (Tailwind/PostCSS optional)
+- Node.js (for dev/build)
 
-## Getting started
+## Prerequisites
+- Node.js >= 16
+- npm or yarn
 
-Install dependencies and run the dev server:
+## Setup
+1. Clone the repo:
+   git clone <repo-url>
+2. Install dependencies:
+   npm install
+   # or
+   yarn
 
-```bash
-npm install
+## Development
+Start the dev server:
 npm run dev
-```
+# or
+yarn dev
 
-Build for production and preview:
+Open http://localhost:5173 (Vite default) or the port shown in the terminal.
 
-```bash
+## Build
+Create a production build:
 npm run build
+# or
+yarn build
+
+Serve the build locally for testing:
 npm run preview
-```
+# or
+yarn preview
+
+## Deployment
+- Deploy the generated build folder to static hosts like Netlify, Vercel, GitHub Pages, or any static file server.
+- If using SvelteKit, follow the adapter-specific deployment steps.
+
+## Project structure (example)
+- src/
+  - routes/ or pages/ — page components
+  - lib/ — reusable components
+  - assets/ — images, icons
+  - styles/ — global CSS or Tailwind config
+- static/ — static files
+- package.json
+- vite.config.js or svelte.config.js
+
+## Customization
+- Update site metadata (title, description) in src or app root.
+- Replace placeholder content and images in src/assets.
+- Add projects to the projects data file or component.
+
+## Contributing
+- Fork, create a branch, make changes, open a PR.
+- Keep commits small and focused.
+- Run lint/tests (if any) before submitting.
 
 ## License
-
-MIT — see `LICENSE`.
+Specify a license in LICENSE file (e.g., MIT).
