@@ -2,30 +2,33 @@
 
 # Portfolio 🎨
 
-Singkat & sederhana: portofolio pribadi dibuat dengan Svelte untuk menampilkan proyek, skill, dan cara menghubungi.
+A simple personal portfolio built with Svelte to showcase projects, skills, and contact info.
 
 ## ⚙️ Tech
 - Svelte + Vite
-- HTML, CSS (Tailwind opsional)
+- HTML, CSS (Tailwind optional)
 - Node.js
 
 ## 🚀 Quick start
-1. git clone <repo-url>
+1. git clone https://github.com/revxcode/ghoodev.git
 2. npm install
-3. npm run dev
-   - Buka http://localhost:5173
+3. npm run dev  
+   Open http://localhost:5173
 
 ## 📦 Build
 - npm run build
 - npm run preview
 
-## 🛠️ Struktur (singkat)
-- src/ — kode sumber
-- static/ — aset statis
+## 🗂 Project structure
+- src/ — source code
+- static/ — static assets
 - package.json, vite.config.js
 
-## 🤝 Kontribusi
-Fork → branch → PR. Jaga commit singkat.
+## 🤝 Contributing
+Fork → branch → PR. Keep commits small and focused.
 
 ## 📬 Contact
-Tambah email / LinkedIn / GitHub di sini.
+Add email, LinkedIn, or GitHub links here.
+
+## 📄 License
+Add a LICENSE file (e.g., MIT) if needed.
