@@ -56,9 +56,9 @@
 }
 
 body {
-	@apply bg-zinc-950;
+	@apply relative w-full min-h-screen;
 }
 
 button {
-	@apply text-white cursor-pointer;
+	@apply cursor-pointer;
 }
