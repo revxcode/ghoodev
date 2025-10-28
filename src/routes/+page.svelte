@@ -161,7 +161,7 @@
 					<img
 						src="adshotel.webp"
 						alt="Modern company profile"
-						class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+						class="pointer-events-none h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
 					/>
 					<div
 						class="absolute inset-0 z-10 flex items-end justify-center gap-3 bg-gradient-to-t from-black/70 to-transparent pb-6 opacity-100 transition-opacity duration-300 group-hover:opacity-100 md:opacity-0"
@@ -206,7 +206,7 @@
 					<img
 						src="electro-tools.webp"
 						alt="Mobile Experience Design electrotools.vercel.app"
-						class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+						class="pointer-events-none h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
 					/>
 					<div
 						class="absolute inset-0 z-10 flex items-end justify-center gap-3 bg-gradient-to-t from-black/70 to-transparent pb-6 opacity-100 transition-opacity duration-300 group-hover:opacity-100 md:opacity-0"
@@ -253,7 +253,7 @@
 					<img
 						src="simply-ai.webp"
 						alt="AI Integration"
-						class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+						class="pointer-events-none h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
 					/>
 					<div
 						class="absolute inset-0 z-10 flex items-end justify-center gap-3 bg-gradient-to-t from-black/70 to-transparent pb-6 opacity-100 transition-opacity duration-300 group-hover:opacity-100 md:opacity-0"
