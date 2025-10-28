@@ -1,6 +1,6 @@
 ![Portfolio banner](/image.webp)
 
-# A personal portfolio built with Svelte to showcase projects, skills, and contact information.
+# A personal portfolio built with Svelte.
 
 ## Features
 - Responsive, accessible layout
