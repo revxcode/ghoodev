@@ -164,14 +164,9 @@
 			>
 				<div class="relative aspect-square overflow-hidden">
 					<img
-						src="/laptop-1.webp"
+						src="adshotel.webp"
 						alt="Modern company profile"
 						class="absolute z-10 h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-					/>
-					<img
-						src="/adshotel.webp"
-						alt="Modern company profile"
-						class="absolute top-32 z-0 scale-[85%] transition-transform duration-500 group-hover:scale-[95%]"
 					/>
 					<div
 						class="absolute inset-0 z-10 flex items-end justify-center gap-3 bg-gradient-to-t from-black/70 to-transparent pb-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
@@ -214,14 +209,9 @@
 			>
 				<div class="relative aspect-square overflow-hidden">
 					<img
-						src="/handphone-1.webp"
+						src="electro-tools.webp"
 						alt="Mobile Experience"
 						class="absolute z-10 h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-					/>
-					<img
-						src="/electro-tools.webp"
-						alt="Mobile Experience"
-						class="absolute -top-60 z-0 scale-[40%] transition-transform duration-500 group-hover:scale-[45%]"
 					/>
 					<div
 						class="absolute inset-0 z-10 flex items-end justify-center gap-3 bg-gradient-to-t from-black/70 to-transparent pb-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
@@ -266,15 +256,9 @@
 			>
 				<div class="relative aspect-square overflow-hidden">
 					<img
-						src="/laptop-2.webp"
+						src="simply-ai.webp"
 						alt="E-Commerce Platform"
 						class="absolute z-10 h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-					/>
-					/>
-					<img
-						src="/simply-ai.webp"
-						alt="Modern Web App"
-						class="absolute top-22 left-0 z-0 scale-[85%] transition-transform duration-500 group-hover:scale-[95%]"
 					/>
 					<div
 						class="absolute inset-0 z-10 flex items-end justify-center gap-3 bg-gradient-to-t from-black/70 to-transparent pb-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
